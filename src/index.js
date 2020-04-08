@@ -1,21 +1,21 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter } from 'react-router-dom';
+import {Provider} from 'react-redux';
+
 import './index.css';
 import App from './App';
-import Footer from './components/footer/footer.component';
+//import Footer from './components/footer/footer.component';
 
+import store from './redux/store';
 
 ReactDOM.render(
-  <BrowserRouter>
-    <App />
-  </BrowserRouter>,
+  <Provider store={store}>
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
+  </Provider>,
   document.getElementById('root')
 );
-ReactDOM.render(
-  <BrowserRouter>
-    <Footer />
-  </BrowserRouter>,
-  document.getElementById('footer')
-);
+
 

@@ -10,7 +10,7 @@ const Footer = () => {
                 <Logo className='logo' />
             </Link>
             <div className='footer-cpyrt-text'>
-                <p className='copyright'>Developed n Published by <Link to='mailto:avinash.tripathi7@gmail.com'>Avinash</Link> </p>
+                <p className='copyright'>Developed n Published by <a href='mailto:avinash.tripathi7@gmail.com'>Avinash</a> </p>
             </div> 
             <div className='options'>
                 <Link className='option' to='/shop'>Shop</Link>
